@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab4373dc-9b1f-43d4-abbf-dd68bc6829f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/infra/k8s/auth-depl.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/auth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -38,9 +40,12 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/auth/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/auth" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/auth" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604330307019</updated>
       <workItem from="1604330308139" duration="1527000" />
-      <workItem from="1604331935926" duration="1094000" />
+      <workItem from="1604331935926" duration="1896000" />
     </task>
     <task id="LOCAL-00001" summary="add dockerignore file to auth service">
       <created>1604332298086</created>
@@ -61,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604332298086</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add auth-depl.yaml kube file to auth service">
+      <created>1604333108138</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604333108138</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,20 +81,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add dockerignore file to auth service" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dockerignore file to auth service" />
+    <MESSAGE value="add auth-depl.yaml kube file to auth service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auth-depl.yaml kube file to auth service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="425" y="248" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604332216001">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
     <state x="425" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.832@0.23.1440.832" timestamp="1604332216001" />
-    <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2" timestamp="1604332297912">
+    <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2" timestamp="1604333108008">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1604332297912" />
-    <state x="221" y="78" key="SettingsEditor" timestamp="1604332565859">
+    <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1604333108008" />
+    <state x="221" y="78" key="SettingsEditor" timestamp="1604333191082">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state x="221" y="78" key="SettingsEditor/0.23.1440.832@0.23.1440.832" timestamp="1604332565859" />
+    <state x="221" y="78" key="SettingsEditor/0.23.1440.832@0.23.1440.832" timestamp="1604333191082" />
   </component>
 </project>
