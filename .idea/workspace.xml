@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab4373dc-9b1f-43d4-abbf-dd68bc6829f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/auth/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infra/k8s/auth-depl.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +12,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="docker-desktop" />
+    <option name="namespace" value="default" />
   </component>
   <component name="ProjectId" id="1jjvRTGyoWjxAiKkNeCNpHUrht6" />
   <component name="ProjectLevelVcsManager">
@@ -29,10 +34,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/auth/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/auth" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -45,11 +52,37 @@
       <option name="presentableId" value="Default" />
       <updated>1604330307019</updated>
       <workItem from="1604330308139" duration="1527000" />
-      <workItem from="1604331935926" duration="344000" />
+      <workItem from="1604331935926" duration="1094000" />
     </task>
+    <task id="LOCAL-00001" summary="add dockerignore file to auth service">
+      <created>1604332298086</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604332298086</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add dockerignore file to auth service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dockerignore file to auth service" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="425" y="248" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604332216001">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="425" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.832@0.23.1440.832" timestamp="1604332216001" />
+    <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2" timestamp="1604332297912">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1604332297912" />
+    <state x="221" y="78" key="SettingsEditor" timestamp="1604332565859">
+      <screen x="0" y="23" width="1440" height="832" />
+    </state>
+    <state x="221" y="78" key="SettingsEditor/0.23.1440.832@0.23.1440.832" timestamp="1604332565859" />
   </component>
 </project>
