@@ -1,6 +1,6 @@
 import express from 'express';
 
-const router = express.Router();
+const router = express();
 
 router.get('/api/users/currentuser', (req, res) => {
     res.send('Hi there!');
