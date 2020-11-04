@@ -1,7 +1,7 @@
 import express, {NextFunction, Request, Response} from 'express';
 import {check, validationResult} from 'express-validator';
-//import {RequestValidationError} from '../errors/request-validation-error';
-//import {DatabaseConnectionError} from '../errors/database-connection-error';
+import {RequestValidationError} from '../errors/request-validation-error';
+import {DatabaseConnectionError} from '../errors/database-connection-error';
 
 const router = express();
 
@@ -19,23 +19,14 @@ router.post(
     async (req: Request, res: Response, next: NextFunction) => {
         const errors = validationResult(req);
 
-        try {
-            if (!errors.isEmpty()) {
-                throw new Error('invalid email or password');
-
-                //throw new RequestValidationError(errors.array());
-            } else {
-                console.log('Creating a user...');
-                throw new Error('Error connecting to database');
-                res.send({});
-            }
-            //throw new DatabaseConnectionError();
-
-        } catch (err) {
-            next(err)
+        if (!errors.isEmpty()) {
+            throw new RequestValidationError(errors.array());
         }
 
+        console.log('Creating a user...');
+        throw new DatabaseConnectionError();
 
+        res.send({});
     }
 );
 
