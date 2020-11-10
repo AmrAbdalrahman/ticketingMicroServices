@@ -1,10 +1,9 @@
 import express, {NextFunction, Request, Response} from 'express';
 import {check} from 'express-validator';
 import jwt from 'jsonwebtoken';
+import {validateRequest, BadRequestError} from '@aaatickets/common';
 
-import {validateRequest} from "../middlewares/validate-request";
 import {User} from "../models/user";
-import {BadRequestError} from "../errors/bad-request-error";
 
 
 const router = express();
