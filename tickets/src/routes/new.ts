@@ -27,11 +27,11 @@ router.post(
         });
         await ticket.save();
 
-        const event = {
+        /*const event = {
             type: 'ticket:created',
             data: ticket,
         };
-        /*stan.publish('ticket:created', JSON.stringify(event), () => {
+        stan.publish('ticket:created', JSON.stringify(event), () => {
             console.log('Ticket creation event published');
         });*/
 
