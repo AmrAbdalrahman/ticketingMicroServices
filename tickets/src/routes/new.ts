@@ -28,6 +28,7 @@ router.post(
         });
         await ticket.save();
 
+        // we use await here  because we want send created ticket event first then return created ticket response
         await new TicketCreatedPublisher(natsWrapper.client).publish({
             id: ticket.id,
             title: ticket.title,
