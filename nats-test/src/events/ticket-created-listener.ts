@@ -6,6 +6,7 @@ import {Subjects} from "./subjects";
 
 export class TicketCreatedListener extends Listener<TicketCreatedEvent> {
     //readonly as same as final subject: Subjects.TicketCreated = Subjects.TicketCreated;
+    //subject: Subjects.TicketCreated = Subjects.TicketCreated;
     readonly subject = Subjects.TicketCreated;
     queueGroupName = 'payments-service';
 
