@@ -11,7 +11,7 @@ import {
 import {stripe} from '../stripe';
 import {Order} from '../models/order';
 import {Payment} from '../models/payment';
-//import {PaymentCreatedPublisher} from '../events/publishers/payment-created-publisher';
+import {PaymentCreatedPublisher} from '../events/publishers/payment-created-publisher';
 import {natsWrapper} from '../nats-wrapper';
 
 const router = express();
@@ -43,15 +43,16 @@ router.post(
         });
         const payment = Payment.build({
             orderId,
-            //stripeId: charge.id,
-            stripeId: 'charge.id',
+            stripeId: charge.id,
         });
         await payment.save();
-        /*new PaymentCreatedPublisher(natsWrapper.client).publish({
+
+        //don't use await here because we want first send response to user/client
+        new PaymentCreatedPublisher(natsWrapper.client).publish({
             id: payment.id,
             orderId: payment.orderId,
             stripeId: payment.stripeId,
-        });*/
+        });
 
         res.status(201).send({id: payment.id});
     }
